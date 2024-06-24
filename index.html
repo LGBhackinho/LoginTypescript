@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="ruddylogin" class="ruddylogin">
+      <div id="rectangle17" class="rectangle17">
+        <div id="login2" class="login2">Login</div>
+
+        <form id="form" onsubmit="submitLogin(event)">
+          <input
+            id="login"
+            class="rectangle5"
+            type="text"
+            name="login"
+            placeholder="login"
+          />
+          <div id="error-login"></div>
+          <input
+            id="mdp"
+            class="rectangle6"
+            type="password"
+            name="mdp"
+            placeholder="mot de passe"
+          />
+          <div id="error-mdp"></div>
+          <div class="group10">
+            <button id="valider2" class="valider2" type="submit">
+              Valider
+            </button>
+            <button
+              type="button"
+              id="valider3"
+              class="valider3"
+              onclick="viderForm()"
+            >
+              Annuler
+            </button>
+          </div>
+        </form>
+
+        <button class="btnjson" onclick="rechercheJson()">
+          Rechercher JSON
+        </button>
+        <div id="texteJson"></div>
+        <button class="btnjson1" onclick="ecrireJson()">affecter JSON</button>
+        <div id="texteJson1"></div>
+        <button class="btnjson2" onclick="funcPrimiseAll()">
+          JSON all URL
+        </button>
+        <div id="texteJson2"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
